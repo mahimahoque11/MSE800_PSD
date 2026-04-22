@@ -1,0 +1,63 @@
+import math
+
+class Calculator:
+    def __init__(self, name):
+        self.name = name
+
+    def basic(self, a, b, op):
+        try:
+            if op == '/' and b == 0:
+                return "Error: Division by zero"
+            if op == '%' and (isinstance(a, complex) or isinstance(b, complex)):
+                return "Error: % not allowed for complex numbers"
+
+            return {
+                '+': a + b,
+                '-': a - b,
+                '*': a * b,
+                '/': a / b,
+                '%': a % b
+            }.get(op, "Invalid operator")
+        except:
+            return "Error in calculation"
+
+    def factorial(self, n):
+        try:
+            return math.factorial(int(n)) if n >= 0 else "Error: negative number"
+        except:
+            return "Error in factorial"
+
+    def show(self, result):
+        print(f"[{self.name}] Result:", result)
+
+
+# Function 1
+def get_number(prompt):
+    val = input(prompt)
+    try:
+        return complex(val) if 'j' in val else float(val)
+    except:
+        print("Invalid input, try again.")
+        return get_number(prompt)
+
+
+# Function 2
+def main():
+    calc = Calculator("Mahima")
+    print("=== Simple OOP Calculator ===")
+
+    op = input("Enter operator (+, -, *, /, %, !): ")
+
+    if op == '!':
+        n = get_number("Enter number: ")
+        res = calc.factorial(n)
+    else:
+        a = get_number("First number: ")
+        b = get_number("Second number: ")
+        res = calc.basic(a, b, op)
+
+    calc.show(res)
+
+
+if __name__ == "__main__":
+    main()
