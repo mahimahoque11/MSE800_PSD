@@ -1,0 +1,32 @@
+# Factory Design Pattern Implementation in Python
+
+This repository contains a demonstration of the **Factory Method Design Pattern** implemented in Python using the `abc` (Abstract Base Classes) module. It showcases how to decouple object creation from client code using interfaces and subclasses.
+
+---
+
+## 📂 Project Structure
+
+The codebase is split into two major hierarchies to enforce loose coupling:
+
+### 1. Factory Hierarchy (Creators)
+* **`Factory` (ABC)**: The abstract creator that defines the contract (`create_product`) for manufacturing objects.
+* **`AnimalFactory`**: A parameterized factory that creates objects based on a passed string argument (`kind`).
+* **`DogFactory` & `CatFactory`**: Concrete factories intended to specialize in creating specific animal types without requiring arguments.
+
+### 2. Product Hierarchy (Products)
+* **`Animals` (ABC)**: The abstract product interface defining the common behavior (`run`).
+* **`Dog` & `Cat`**: Concrete products that implement the `Animals` interface with their own specific behaviors.
+
+---
+
+## 🛠️ Analysis of the Original Code & Bug Fixes
+
+If you run the initial client script provided in the snippet, it will encounter a runtime error:
+
+### The Issue
+```python
+# Original Client Code
+factory = DogFactory()
+dog = Dog()                        # Directly instantiating bypasses the factory pattern
+dog = factory.create_product()     # DogFactory.create_product() returns None because it only contains 'pass'
+dog.run()                          # Throws AttributeError: 'NoneType' object has no attribute 'run'
