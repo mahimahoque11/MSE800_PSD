@@ -2,4 +2,5 @@ fastapi
 uvicorn
 bcrypt
 pydantic
-python-multipart
+email-validator
+pylint

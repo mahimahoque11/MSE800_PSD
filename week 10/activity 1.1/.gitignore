@@ -1,4 +1,3 @@
-# Python
 __pycache__/
 *.pyc
 *.pyo
@@ -6,14 +5,8 @@ __pycache__/
 .env
 venv/
 .venv/
-
-# Database
 *.db
 *.sqlite3
-
-# VS Code
 .vscode/
-
-# OS files
 .DS_Store
 Thumbs.db
