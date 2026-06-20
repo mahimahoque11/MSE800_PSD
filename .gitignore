@@ -29,5 +29,5 @@ Thumbs.db
 # Local SQLite databases created while testing.
 # Existing tracked database examples remain in Git.
 *.db
-!week04/assesment1/moneyexchange.db
+!week04/assessment1/moneyexchange.db
 !week08/car_rental/cars.db

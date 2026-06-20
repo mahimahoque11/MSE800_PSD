@@ -5,7 +5,7 @@ This folder contains Week 09 PDF activity submissions for MSE800.
 
 ## Contents
 - `week9Activity1.pdf`: Week 09 Activity 1 PDF.
-- `week9Acitivity2.pdf`: Week 09 Activity 2 PDF.
+- `week9Activity2.pdf`: Week 09 Activity 2 PDF.
 
 ## How to View
 Open the PDF files in a browser, PDF reader, or GitHub preview.

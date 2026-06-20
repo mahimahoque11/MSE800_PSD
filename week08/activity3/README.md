@@ -4,14 +4,14 @@
 This activity demonstrates single inheritance using an Air New Zealand domestic flight system.
 
 ## Contents
-- `singleInhertitance.py`: Python code for the `Flight` parent class and `DomesticFlight` child class.
+- `singleInheritance.py`: Python code for the `Flight` parent class and `DomesticFlight` child class.
 - `classDiagram.drawio`: Editable class diagram.
 
 ## How to Run
 From this folder, run:
 
 ```bash
-python singleInhertitance.py
+python singleInheritance.py
 ```
 
 ## Requirements

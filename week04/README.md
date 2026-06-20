@@ -4,9 +4,9 @@
 This folder contains Week 04 database, diagram, and Python class activities for MSE800.
 
 ## Contents
-- `acitivity3`: Use case diagrams.
+- `activity3`: Use case diagrams.
 - `activity2`: Rectangle land measurement Python activity.
-- `assesment1`: Money exchange database assessment.
+- `assessment1`: Money exchange database assessment.
 
 ## How to Use
 Open diagram files in an image viewer. Run Python activities from their own folders using Python 3.
