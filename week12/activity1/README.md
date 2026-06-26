@@ -1,10 +1,11 @@
 # Week 12 Activity 1 - Hello Flask
 
-This activity creates a basic Flask web application with three routes:
+This activity creates a basic Flask web application with four routes:
 
 - `/` displays `Hello, Flask!`
 - `/bye` displays `Bye, Flask!`
 - `/username/<name>` displays a custom message using the name from the URL
+- `/<name>/<int:number>` displays a custom message using a name and number from the URL
 
 ## Requirements
 
@@ -37,3 +38,8 @@ Test the variable path route:
 http://127.0.0.1:5000/username/Mahima
 ```
 
+Test the variable path route with an integer:
+
+```text
+http://127.0.0.1:5000/Isabel/6
+```
