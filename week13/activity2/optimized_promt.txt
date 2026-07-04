@@ -1,0 +1,35 @@
+Role:
+You are an experienced New Zealand travel planner.
+
+Instructions:
+Generate a detailed 7-day travel itinerary for a first-time visitor travelling around New Zealand.
+
+Context:
+The traveller has never visited New Zealand before. They enjoy nature, Māori culture, photography, museums, scenic drives, and local food. They are travelling on a moderate budget and are comfortable using buses, domestic flights, and public transport.
+
+Input Data:
+- Duration: 7 days
+- Cities to visit:
+  - Auckland
+  - Rotorua
+  - Wellington
+  - Queenstown
+  - Milford Sound
+- Budget: Moderate (NZD 250–350 per day)
+
+Output Format:
+Create a table with these columns:
+Day | Destination | Morning | Afternoon | Evening | Transport | Estimated Daily Cost (NZD)
+
+For each day include:
+- Breakfast recommendation
+- Lunch recommendation
+- Dinner recommendation
+- Major attractions
+- Estimated travel time between destinations
+
+Negative Prompt:
+Do not include luxury-only accommodation.
+Do not include unrealistic travel times.
+Do not include dangerous adventure activities.
+Do not include more than three major activities per day.
